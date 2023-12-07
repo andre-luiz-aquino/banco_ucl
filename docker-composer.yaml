@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ucl_climabom
+      POSTGRES_USER: ucl_climabom
+      POSTGRES_PASSWORD: semsenha
+    ports:
+      - "5432:5432"
